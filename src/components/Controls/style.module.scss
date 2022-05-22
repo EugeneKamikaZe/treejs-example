@@ -1,0 +1,48 @@
+.controls {
+  width: 400px;
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  background-color: #fff;
+  border: 1px solid gray;
+  border-radius: 4px;
+  z-index: 100;
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.renderTrack {
+  height: 36px;
+  display: flex;
+  width: 100%;
+
+  &_children {
+    height: 5px;
+    width: 100%;
+    border-radius: 4px;
+  }
+}
+
+.renderThumb {
+  height: 42px;
+  width: 42px;
+  border-radius: 4px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 6px #aaa;
+
+  &_children {
+    height: 16px;
+    width: 5px;
+    background-color: #ccc;
+  }
+
+  &_active {
+    background-color: #548bf4;
+  }
+}
