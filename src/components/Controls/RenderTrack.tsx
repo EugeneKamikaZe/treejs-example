@@ -31,12 +31,12 @@ const RenderTrack: React.FC<IRender> = ({
             </div>
 
             <Range values={values}
-                   step={step}
-                   min={min}
-                   max={max}
                    onChange={value => {
                        setValues(value)
                    }}
+                   step={step}
+                   min={min}
+                   max={max}
                    renderTrack={({
                                      props,
                                      children
